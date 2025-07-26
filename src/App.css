@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root {
+  --primary-color: #009ad6;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #555;
+  --font-main: 'Poppins', sans-serif;
+  --border-radius: 8px;
+  --spacing: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: #fafafa;
+}
+
+.App {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--dark-gray);
+}
+
+.slider {
+  width: 100%;
+  margin-top: 4px;
+  accent-color: var(--primary-color);
+}
+
+.lables {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.tenureContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  margin-top: 8px;
+}
+
+.tenure {
+  flex: 1;
+  min-width: 80px;
+  padding: 12px 0;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--medium-gray);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tenure:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.selected {
+  background-color: var(--primary-color);
+  color: white;
+}
